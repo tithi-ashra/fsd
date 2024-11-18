@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <title>Program 2</title>
+    <!--Selectors-->
+    <!--1.Id Selector-->
+    <!--2.Class selector-->
+    <!--3.Universal selector--> 
+    <!--4.Attribute selector-->
+    <style>
+        #p3{
+            text-align:center;
+            color:blue;
+        }
+        #test{
+            background-color:yellow;
+        }
+        #p3{
+            color:red;
+        }
+        .p1{
+            color:blueviolet;
+            font-size:35px;
+            text-align:right;
+        }
+        .bg-pink{
+            background-color:pink;
+        }
+        *{
+            color: blueviolet;
+            font-size: 25px;
+        }
+        input[type=text]{
+            width: 500px;
+            background-color: aqua;
+            color: red;
+            padding: 20px;
+        }
+        input[type=submit]{
+            width: 100px;
+            height: 50px;
+            color: #fff;
+            background-color: #000;
+        }
+        a[target=_blank]{
+            color: red;
+            text-decoration: name;
+        }
+    </style>
+</head>
+<body id="test">
+    <!--Selectors-->
+    <!--1.Id Selector-->
+    <p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ex deserunt minus quia laborum placeat 
+        voluptate ipsum, numquam reiciendis repellendus magnam qui voluptatibus recusandae provident veniam nemo! 
+        Labore, est sint.</p>
+    
+    <!--2.Class selector-->
+    <p id="p3" class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ex deserunt minus quia laborum placeat 
+        voluptate ipsum, numquam reiciendis repellendus magnam qui voluptatibus recusandae provident veniam nemo! 
+        Labore, est sint.</p>    
+    <h3 class="p1">Hello</h3>
+    <h4 class="bg-pink">Hii! good morning</h4>
+
+    <!--3.Universal selector-->
+    <p>Hello</p>
+    <h2>hiii</h2>
+
+    <!--4.Attribute selector-->
+    <input type="text"><br>
+    <input type="submit"><br>
+    <a href="#" target="_blank">Link1</a><br>
+    <a href="#" target="_blank">Link2</a><br>
+</body>
+</html>
