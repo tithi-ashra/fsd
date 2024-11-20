@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Program 15</title>
+    <style>
+        .d1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid;
+            padding: 20px;
+            transition-property: width,heigth,background-color,tranform;/*all*/
+            transition-duration: 6s,7s,8s,10s;
+            transition-delay: 0.5s;
+            /*transition: all 3s 0.5s;   and   transition: height 2s 3s,width 3s 4s;*/
+        }
+        .d1:hover{
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            color: yellow;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <!--CSS Transitions-->
+    <!--Types are : 1.transition-property 2.transition-duration 3.transition-delay-->
+    <div class="d1">
+        helloooo
+        good morning
+    </div>
+</body>
+</html>
