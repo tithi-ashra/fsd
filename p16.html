@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <title>Program 16</title>
+    <style>
+        .d1{
+            background-image: linear-gradient(red,green,blue,purple,yellow);
+            /*background-image: linear-gradient(to top,pink 20%,purple 30%,blue 50%);*/
+            /*background-image: linear-gradient(-90deg,red,green);*/
+            /*to top,to left,to right,to top left,to top right,to right bottom,to bottom left*/
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .d2{
+            background-image: radial-gradient(pink,red,blue);
+            /*background-image: radial-gradient(pink 20%,red 30%,blue 50%)*/
+            /*background-image: radial-gradient(circle,yellow,green);*/
+            /*background-image: radial-gradient(circle,yellow 50%,green 50%);*/
+            width: 300px;
+            height: 200px;
+            font-size: 40px;
+        }
+        .d3{
+            background-image: conic-gradient(red,green,blue);
+            /*background-image: conic-gradient(red 45deg,yellow 90deg,green 180deg,pink 270deg,purple 310deg);*/
+            /*background: conic-gradient(blue 0deg,blue 90deg,red 90deg,red 180deg,yellow 180deg,yellow 270deg,green 270deg);*/
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            text-align: right;
+            /*border-radius: 50%;*/
+        }
+    </style>
+</head>
+<body>
+    <!--Gradients-->
+    <!--Types are :- 1.Linear(direction/angle) (to bottom)
+                     2.Radial(ellipse/center) (ellipse)
+                     3.Conic(0deg/90) (0deg)-->
+    <!--Apply only to background-image and background-->
+    <div class="d1">Linear</div>
+    <div class="d2">Radial</div>
+    <div class="d3">Conic</div>
+</body>
+</html>
