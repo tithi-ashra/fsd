@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <title>Program 20</title>
+    <style>
+        .pagination{
+            display: inline-block;
+        }
+        .pagination a{
+            text-decoration: none;
+            color: red;
+            background-color: yellow;
+            padding: 20px;
+            margin: 5px;
+            border: 3px solid red;
+            float: left;
+        }
+        .pagination .active{
+            background-color: green;
+            border: 5px dashed blue;
+            color: blue;
+            border-radius: 10%;
+        }
+        .pagination a:hover:not(.active){
+            background-color: lightblue;
+            color: blue;
+            border: 3px dashed blue;
+            transform: rotate(30deg);
+            transition: all 5s 2s;
+        }
+    </style>
+</head>
+<body>
+    <!--Pagination-->
+    <!--types are : 1.simple 2.active and hoverable 3.bordered-->
+    <!--<< = &laquo  and  >> = raquo-->
+    <div class="pagination">
+        <a href="#"> &laquo; </a>
+        <a href="#"> 1 </a>
+        <a href="#" class="active"> 2 </a>
+        <a href="#"> 3 </a>
+        <a href="#"> 4 </a>
+        <a href="#"> 5 </a>
+        <a href="#"> &raquo; </a>
+    </div>
+</body>
+</html>
