@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 17</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"                                   integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Accordion-->
+    <!--Classes are:- first id then .card & .card-header(used <a>&.card-link) is used then .card-body(id,class,data-parent) is used-->
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#ques1" class="card-link" data-toggle="collapse">HTML</a>
+            </div>
+            <div id="ques1" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    HTML (HyperText Markup Language) is the standard markup language for creating web pages. It defines the structure of a document, the meaning of its content, and the presentation of its visual elements.
+                </div>
+            </div>
+            <div class="card-header">
+                <a href="#ques2" class="card-link" data-toggle="collapse">JavaScript</a>
+            </div>
+            <div id="ques2" class="collapse" data-parent="#accordion">
+                <div class="card-body">JavaScript is a programming language that adds interactivity to web pages. It allows web developers to create dynamic and interactive web pages.
+            </div>
+        </div>
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#ques2" class="card-link" data-toggle="collapse">CSS</a>
+            </div>
+            <div id="ques2" class="collapse" data-parent="#accordion">
+                <div class="card-body">CSS(Cascading Style Sheet) is used to design a web pades</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
