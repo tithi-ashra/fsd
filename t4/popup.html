@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 6</title>
+    <script>
+        function warn(){
+            alert("This is a warning message");
+            document.write("warning");
+        }
+    </script>
+    <script>
+        function conf(){
+            var res = confirm("Do you wan to continue?");
+            if (res == true){
+                document.write("Yes");
+                return true;
+            }
+            else{
+                document.write("No");
+                return false;
+            }
+        }
+    </script>
+    <script>
+        function getval(){
+            var x = prompt("Enter your name : ","ABC");
+            document.write("Welcome " +x);
+        }
+    </script>
+</head>
+<body>
+    <!--Pop up Boxes-->
+    <!--Types are :- 1.alert 2.Confirm 3.prompt-->
+
+    <input type="button" onclick="warn()" value="Alert">
+    <br><br>
+    <input type="button" onclick="conf()" value="conform">
+    <br><br>
+    <input type="button" onclick="getval()" value="prompt">
+</body>
+</html>

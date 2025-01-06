@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 2</title>
+    <script>
+        function abc(){
+            var x = 10;             //local variable
+            document.write(x);
+        }
+        abc();
+    </script>
+    <br>
+    <script>
+        var a = 200;                //global variable
+        function abc(){
+            document.write(a);
+        }
+        console.log(a);
+        abc();
+    </script>
+    <br>
+    <script>
+        x1 = 5;
+        y1 = 6;
+        document.write(x1+y1);
+        console.log(x1+y1);
+    </script>
+    <br>
+    <script>
+        var a1 = 10;
+        function f1(){
+            var a2 = 20;
+            console.log(a1,a2)
+        }
+        f1();
+        //console.log(a1+a2)                  //ReferenceError
+        //console.log(a2);
+        var a3 = 10;
+        var a3 = 8;
+        a3 = 18;
+        console.log(a3);
+        console.log(a4);
+        var a4 = 10;
+    </script>
+    <br>
+    <script>
+        let a5 = 10;
+        function f2(){
+            let a6 = 9;
+            console.log(a5);
+            console.log(a6);
+        }
+        f2();
+        //console.log(a6);                    //ReferenceError
+        let b1 = 10;
+        //let b1 = 20;                        //SyntaxError
+        b1 = 20;
+        console.log(b1);
+        let d = 10;
+        function f3(){
+            let d = 3;
+            console.log(d);
+        }
+        f3();
+        console.log(d);                     
+        //console.log(e);                     //ReferenceError: Cannot access 'e' before initialization
+        let e = 20;
+    </script>
+    <br>
+    <script>
+        const z = 10;
+        function f4(){
+            //z = 9;                         //TypeError
+            const z = 5;
+            console.log(z);
+        }
+        f4();
+        console.log(z);
+    </script>
+</head>
+<body>
+    <!--Variables-->
+    <!--Keywords are :- 1.var(global or function scoped) 2.let(block scope) 3.const(block scope)
+        4.automatically-->
+    <!--Identifers are the name of variables 
+        rules :- start with letter,underscore,dollar then used number and can't used reserved 
+        keywords-->
+</body>
+</html>

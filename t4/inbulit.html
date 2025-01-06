@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <script>
+        document.write("MATH FUNCTIONS");
+        document.write("<br/>Square root : "+Math.sqrt(16));
+        document.write("<br/>Absolute : "+Math.abs(-2));
+        document.write("<br/>Ceil : "+Math.ceil(1.4));
+        document.write("<br/>Negative Ceil : "+Math.ceil(-1.4));
+        document.write("<br/>Floor : "+Math.floor(1.8));
+        document.write("<br/>Negative Floor : "+Math.floor(-1.8));
+        document.write("<br/>Power: "+Math.pow(3,3));
+        document.write("<br/>Maximum: "+Math.max(3,-2,2.4,3.5));
+        document.write("<br/>Minimum: "+Math.min(3,3.2,2.2,1.0));
+        document.write("<br/>Round: "+Math.round(3.21041434));
+        document.write("<br/>Random: "+Math.random());   //between 0-1
+    </script>
+    <br>
+    <script>
+        x="hello";
+        y=" World";
+        x1="this is demo";
+        y1="is";
+        text = "Hello world, welcome to the universe.";
+
+        document.write("<h1>String Methods</h1>");
+        document.write("<br/>char at 0th position :"+x.charAt(0));
+        document.write("<br/>Unicode value at 0th position :"+x.charCodeAt(0));
+        document.write("<br/>concated string : "+x.concat(y));
+        document.write("<br/>replace : "+x.replace("hell",y));
+        document.write("<br/>split: "+x.split("l"));
+        document.write("<br/>split: "+x1.split(" "));
+
+        document.write("<h1>substr and substring</h1>");
+        document.write("<br/>sub str: "+x1.substr(2,5));
+        document.write("<br/>sub string: "+x1.substring(2,6) +"<br>");
+        const str1 = "ljuniversity";
+        const substrResult = str1.substr(3, 7);
+        const substringResult = str1.substring(3, 7);
+        document.write("substr(3, 7) =", substrResult +"<br>");
+        document.write("substring(3, 7) =", substringResult +"<br>");
+
+        document.write("<h1>Lowercase and Uppercase</h1>");
+        document.write("<br/>Uppercase: "+x.toUpperCase());
+        document.write("<br/>Lowercase: "+y.toLowerCase());
+
+        document.write("<h1>Index Of</h1>");
+        document.write("<br/>First Occurance ' ': "+text.indexOf(" "));
+        document.write("<br/>First Occurance of to : "+text.indexOf("the"));
+        document.write("<br/>First Occurance of l : "+text.indexOf("l"));
+        document.write("<br/>First Occurance of w : "+text.indexOf("w"));
+        document.write("<br/>First Occurance of u : "+text.indexOf("u"));
+        document.write("<br/>first index Occurance : "+x1.indexOf(y1));
+        document.write("<br/>first index Occurance : "+text.indexOf(y1));
+        document.write("<br/>Last index Occurance: "+x1.lastIndexOf(y1));
+
+        document.write("<h1>Trim</h1>");
+        document.write("<br/>Trim : "+x1.trim());
+        x2 = "    hii    ";
+        document.write("<br/>Trim : "+x2.trim());
+    </script>
+    <br><br>
+    <script>
+        var d1 = new Date();
+        document.write(d1+"<br>");
+        document.write(d1.getDay()+"<br>");
+        document.write(d1.getMonth()+"<br>");
+        document.write(d1.getDate()+"<br>");
+        document.write(d1.getFullYear()+"<br>");
+        document.write(d1.getTime()+"<br>");
+        document.write(d1.getHours()+"<br>");
+        document.write(d1.getMinutes()+"<br>");
+        document.write(d1.getSeconds()+"<br>");
+        document.write(d1.getMilliseconds()+"<br>");
+    </script>
+</head>
+<body>
+    <!--Inbuilt Objects-->
+    <!--Types are :- 1.Array 2.Date 3.Math 4.String(0-9:48-57) 5.Number-->
+</body>
+</html>

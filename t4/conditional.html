@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <script>
+        var g = 70;
+        if(g>=85){
+            document.write("Grade A");
+        }
+        else if(g<=85 && g>=60){
+            document.write("Grade B");
+        }
+        else if(g<=60 && g>=35){
+            document.write("Grade C");
+        }
+        else{
+            document.write("Grade F");
+        }
+    </script>
+    <br>
+    <script>
+        var grade = 'A';
+        document.write("Entering switch block<br />");
+        switch (grade) 
+        {
+            case 'A': 
+                document.write("Good job<br />");
+                break;
+            case 'B': 
+                document.write("Pretty good<br />");
+                break;
+            case 'C': 
+                document.write("Passed<br />");
+                break;
+            case 'D': 
+                document.write("Not so good<br />");
+                break;
+            case 'F': 
+                document.write("Failed<br />");
+                break;
+            default: 
+            document.write("Unknown grade<br />")
+        }
+        document.write("Exiting switch block");
+    </script>
+    <br>
+    <script>
+        let i = 5;
+        for(i=0;i<10;i++){
+            document.write(i+" ");
+        }
+        document.write(i);   //if we write let inside for it will noy overwrite but var will overwrite
+    </script>
+    <br>
+    <script>
+        var i1 = 5;
+        while(i1<11){
+            document.write(i1+" ");
+            i1++;
+        }
+    </script>
+    <br>
+    <script>
+        var i2 = 5;
+        while(i2<11){
+            i2++;
+            document.write(i2+" ");
+        }
+    </script>
+    <br>
+    <script>
+        var i3 = 0;
+        do{
+            document.write(i3+" ");
+            i3++;
+        }while(i3<10);
+    </script>
+    <br>
+    <script>
+        var i4 = 0;
+        do{
+            i4++;
+            document.write(i4+" ");
+        }while(i4<10);
+    </script>
+</head>
+<body>
+    <!--Conditional Statements-->
+    <!--Types are :- 1.if 2.if-else 3.if-else if 4.switch(use case,default) 5.for 
+        6.while(Entry) 7.do while(Exit) 8.Break and Continue statement-->
+</body>
+</html>
