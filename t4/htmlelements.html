@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3</title>
+    <script>
+        function display(){
+            var a = document.getElementsByClassName("c1");
+            for(i=0;i<a.length;i++){
+                a[i].style.backgroundColor = "yellow";
+                a[i].style.fontSize = "30px";
+                a[i].style.color = "red";
+            }
+            var b = document.getElementsByTagName("p");
+            for(i=0;i<a.length;i++){
+                b[i].innerHTML = "good morning";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--HTML Elements-->
+    <!--Types are :- 1.document.write() 2.document.writeln() 3.getElementById() 
+        4.getElementsByTagName() 5.getElementsByClassName()-->
+    <!--Attributes-->
+    <!--Types are :- 1.element.innerHTML 2.element.attribute 3.element.style.property 
+        4.element.setAttribute(attribute,value)-->
+
+    <p id="p1">lorem</p>
+    <script>
+        var e = document.getElementById("p1");
+        e.innerHTML = "hello";      //var e = document.getElementById("p1").innerHTML("hello");
+        e.style.color = "red";
+        e.style.backgroundColor = "yellow";
+        e.style.fontSize = "20px";
+        e.title = "demo";
+        e.setAttribute("class","p1");
+        //document.write(e);                       o/p:-[object HTMLParagraphElement]
+    </script>
+
+    <h1 class="test"></h1>
+    <p class="test"></p>
+    <script>
+        var p1 = document.getElementsByClassName("test");
+        for(i=0;i<p1.length;i++){
+            p1[i].innerHTML = "class";
+            p1[i].style.color = "red";
+        }
+    </script>
+
+    <p class="c1">hello</p>
+    <h1 class="c1">Hii</h1>
+    <button onclick="display()">change</button>
+</body>
+</html>

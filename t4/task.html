@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1</title>
+    <script>
+        function daydiff(date1,date2){
+            var one_day = 24*60*60*1000;
+            var d1 = date1.getTime();
+            var d2 = date2.getTime();
+            var daydif = Math.abs(d1-d2);
+            return (Math.round(daydif/one_day))
+        }
+        function display(){
+            var date = prompt("Enter Date : ");
+            var month = prompt("Enter Month : ");
+            var year = prompt("Enter Year(>=2025) : ");
+            var date1 =  new Date();
+            date1.setDate(date);
+            date1.setMonth(month);
+            var date2 = new Date();
+            cy = date2.getFullYear();
+            if (year>=cy){
+                date1.setYear(year);
+            }
+            else{
+                alert("Invalid Year.Please Enter valid year.");
+            }
+            document.write("No. of days : "+daydiff(date1,date2));
+        }
+        display();
+    </script>
+</head>
+<body>
+    <!--<button onclick="display()">Calculate days</button>-->
+</body>
+</html>
