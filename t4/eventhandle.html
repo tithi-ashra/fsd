@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 4</title>
+    <script>
+        //1.Mouse Events
+        function click1(e){
+            e.innerHTML = "text";
+            e.style.color = "red";
+        }
+        function mdown(x){
+            x.style.color = "yellow";
+            x.style.fontsize = "30px";
+        }
+        function mup(x){
+            x.style.color = "pink";
+        }
+        function mover(x){
+            x.style.color = "blue";
+        }
+        function mout(x){
+            x.style.color = "purple";
+        }
+        function ev(e){
+            val = e.button;
+            if (val==0){
+                alert("Left click");
+            }
+            else if(val==1){
+                alert("Middle click");
+            }
+            else{
+                alert("Right click");
+            }
+        }
+    </script>
+    <script>
+        //3.Keyboard Events
+        function fun1(id){
+            id.bgColor = "red";
+        }
+        function fun2(id){
+            id.bgColor = "blue";
+        }
+        function fun3(e){
+            alert(e.keyCode);      //e.key will give key and this will gice ASCII
+        }
+        function vow(e){
+            val = e.key;
+            if (val=='a'||val=='e'||val=='i'||val=='o'||val=='u'||val=='A'||val=='E'||val=='I'||val=='O'||e=='U'){
+                alert('Vowel');
+            }
+            else{
+                alert("Consonants or numbers or another key");
+            }
+        }
+    </script>
+</head>
+<body onkeydown="vow(event)">
+    <!--Event Handling-->
+    <!--Types are :- 1.Mouse events(onclick,onmouseup,onmousedown,onmouseover,onmouseout)
+        2.Form events(onchange,onblur,onfocus,onsubmit,oninput) 
+        3.Keyboard events(onkeydown,onkeyup,onkeypress)-->
+
+    <!--1.Mouse Events-->
+    <h1 onclick="click1(this)">Hii</h1>
+    <h2 onmousedown="mdown(this)" onmouseup="mup(this)">Mouse Events</h2>
+    <h2 onmouseover="mover(this)" onmouseout="mout(this)">Mouse Events</h2>
+    <div onmousedown="ev(event)">Test</div>   <!--mouseEvent button property-->
+    <br><br>
+
+    <!--2.Form Events-->
+    <form onsubmit="sub()">
+        <input value="hello" name="uname" id="uname" onchange="oc()" onfocus="of()" onblur="ob()" oninput="oi()">
+        <input type="submit">
+    </form>
+    <script>
+        var b = document.getElementById("uname");
+        function oc(){
+            b.style.color = "red";
+            b.style.backgroundColor = "yellow";
+        }
+        function of(){
+            b.style.color = "blue";
+            b.style.textTransform = "uppercase";
+        }
+        function ob(){
+            b.style.color = "green";
+        }
+        function oi(){
+            b.style.color = "orange";
+        }
+        function sub(){
+            a = b.value;
+            alert("Welcome : "+a);
+        }
+    </script>
+    <br><br>
+
+    <!--3.Keyboard Events-->
+    <!--use in body and KeyboardEvent key and keyCode property-->
+    <!--onkeyup="fun1(this)" onkeydown="fun2(this)" onkeydown="fun3(event)"-->
+</body>
+</html>
