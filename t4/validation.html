@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <script>
+        function fun(){
+            // METHOD1
+            obj2 = document.f1.t1.value;
+            document.write(obj2);
+            // METHOD2
+            // obj3 = document.forms["f1"]["t1"].value;
+            // document.write(obj3);
+            // METHOD3
+            // obj4 = document.getElementById(‘’i1”).value;
+            // document.write(obj4);
+            alert(obj2.length);
+        }
+    </script>
+</head>
+<body>
+    <!--Javascript Validation-->
+    <!--obj = document.forms[“form_name”][“element_name”].value;
+                            or
+    obj = document.form_name.element_name.value;
+                            or
+    obj = document.getElementByID(id).value;-->
+
+    <form name="f1" onsubmit="fun()">
+        <input type="text" name="t1" id=”i1”/>
+        <input type="password"/>
+        <input type="submit"/>
+        <input type="reset"/>
+    </form>
+</body>
+</html>

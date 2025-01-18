@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 6</title>
+    <script>
+        function fun(){
+            var pat = /abc/i;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                           //abc
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun1(){
+            var pat = /^abc/;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                           //start with abc
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun2(){
+            var pat = /abc$/i;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                          //end with abc
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun3(){
+            var pat = /^abc$/i;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                         //only abc
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun4(){
+            var pat = /[abc]/;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                        //abc,a,b,c
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun5(){
+            var pat = /[^abc]/;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                             
+            }
+            else{
+                alert("Invalid String");                 //abc,a,b,c
+            }
+        }
+    </script>
+    <script>
+        function fun6(){
+            var pat = /co*/;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");                              
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+    <script>
+        function fun7(){
+            var pat = /co+/;
+            var un = document.getElementById("test").value;
+            if (pat.test(un)){
+                alert("perfect");
+            }
+            else{
+                alert("Invalid String");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--Regular Expression(Regex)
+        It is a pattern of characters-->
+    <!--Syntax :- /pattern/modifier(s)-->
+    <!--Method :- test()-->
+    <!--Modifiers are :- \(next),^(begin),$(end),*(preceding 0 or more time),
+        +(preceding 1 or more time),?(preceding 0 or 1 time),x|y,{n},{n,},{n,m},[xyz],[^xyz],
+        [a-z],[^m-z],\d(digit 0-9),\D,\w(A-Za-z0-9_),\W-->
+
+    <input type="text" id="test">
+    <input type="submit" onclick="fun()">
+</body>
+</html>
