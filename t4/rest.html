@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3</title>
+    <script>
+        function fun(a, b){
+            console.log(a);
+            console.log(b);
+        }
+        fun(1,2,3,4,5);
+
+        function fun1(a, b, ...c){
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        fun1(1, 2, 3, 6, 5);
+
+        function fun2(...input) {
+            let sum = 0;
+            for (let i of input) {
+                sum += i;   
+            }
+            return sum;
+        }
+        console.log(fun2(1, 2));
+        console.log(fun2(1, 2, 3)); 
+        console.log(fun2(1, 2, 3, 4, 5)); 
+
+        function fun3(a, b, ...c) {
+            console.log(`${a} ${b}`); 
+            console.log(c); 
+            console.log(c[0]); 
+            console.log(c.length); 
+            console.log(c.indexOf('pqr')); 
+            console.log(c.indexOf('abc')); 
+        }
+        fun3('abc', 'xyz', 'pqr', 'mno', 'stu');
+    </script>
+    <script>
+        function multiply(a, b) {
+            return a * b;
+        }
+        let num1 = multiply(5);
+        console.log(num1);
+        let num2 = multiply(5, 8);
+        console.log(num2);
+
+        function multiply1(a, b = 2) {
+            return a * b;
+        }
+        let num3 = multiply1(5);
+        console.log(num3);
+        let num4 = multiply1(5, 8);
+        console.log(num4);
+    </script>
+</head>
+<body>
+    <!--Rest Parameter-->
+    <!--When ... is added with parameter then it is the rest parameter. It stores n
+        number of parameters as an array.-->
+        
+    <!--Default Parameters-->
+    <!--Syntax :- function name(parameters_n, parameter_n=value) {}-->
+</body>
+</html>
