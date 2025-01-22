@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 9</title>
+    <script>
+        var m1 = new Map();
+        m1.set("ABC","Faculty");
+        m1.set("XYZ","HOD");
+        console.log(m1);
+        m1.delete('ABC');
+        console.log(m1);
+        m1.set("ABC","Admin");
+        m1.set("XYZ","Faculty");         //update value
+        m1.set("Abc","HOD");
+        console.log(m1);
+
+        var m2 = new Map([['ABC','Admin'],['XYZ','Faculty']]);
+        console.log(m2);                //{'ABC' => 'Admin', 'XYZ' => 'Faculty'}
+        console.log(m2.size);
+        m2.clear();
+        console.log(m2);                //{size: 0}
+    </script>
+</head>
+<body>
+    <!--Map-->
+    <!--Syntax :- let map = new Map([iterable]) , let map = new Map()
+                new Map() : It is a map constructor-->
+    <!--Methods :- 1.Map.set() 2.Map.delete() 3.Map.clear() 4.Map.size()-->
+</body>
+</html>

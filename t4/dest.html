@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    //Array
+    <script>
+        function gs(){
+            return [50,70,90];
+        }
+        s = gs();
+        x = s[0];
+        y = s[1];
+        z = s[2];
+        console.log(x,y,z);
+
+        let [a,b,c] = gs();
+        console.log(a,b,c);
+
+        function gs1() {
+            return [70, 80];
+        }
+        let [m,n,o] = gs1();
+        console.log(m,n,o);
+
+        function gs2() {
+            return [70, 80, 90, 100];
+        }
+        let [p,q,r] = gs2();
+        console.log(p,q,r);
+        let [i,j,...k] = gs2();
+        console.log(i,j,k);
+    </script>
+    //Object
+    <script>
+        const employee1 = {name: 'ABC', position: 'Developer', id: '24'};
+        console.log(employee1.name);
+        console.log(employee1.position); 
+        console.log(employee1.id); 
+
+        const employee = {name: 'ABC', position: 'Developer', id: '24'};
+        const {name, position, id} = employee;  //const {name:n,position:p,id:i} = employee;
+        console.log(name);
+        console.log(position); 
+        console.log(id); 
+    </script>
+</head>
+<body>
+    <!--Destructuring Assignment-->
+    <!--destructure properties of an object or elements of an array into individual variables.-->
+    <!--Types are :- 1.Array destructuring 2.Object destructuring-->
+
+</body>
+</html>

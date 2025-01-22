@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <script>
+        const a = ["a", "b", "c"];
+        for (const [i, e] of a.entries()) {
+            console.log(i, e);
+        }
+
+        let arr=[10,20,30,40];
+        let sum=0;
+        for([p,q] of arr.entries()){    
+            sum+=(p%10);
+        }
+        console.log(sum);
+
+        let arr1=[1,2,3,4,5,6,7,8];
+        let sum1=0;
+        for([ind,vals] of arr1.entries()){  
+            if(ind%2==1){
+                sum1=sum1+vals;
+            }
+        }
+        console.log(`Sum=${sum1}`);
+    </script>
+    <script>
+        //not in course
+        const object = { name: 'abc', age: 42 };
+        console.log(Object.entries(object));
+    </script>
+</head>
+<body>
+    <!--Entries Method-->
+    <!--The entries() method of Array instances returns a new array iterator object that 
+        contains the key/value pairs for each index in the array.
+    The entries() method does not change the original array.-->
+</body>
+</html>
